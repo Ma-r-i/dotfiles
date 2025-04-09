@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export BROWSER='librewolf'
+export BROWSER='brave'
 export TERMINAL='kitty'
 export TERM='kitty'
 export EDITOR='nano'
