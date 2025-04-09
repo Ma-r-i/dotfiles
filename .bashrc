@@ -2,8 +2,8 @@
 [[ $- != *i* ]] && return
 
 export BROWSER='librewolf'
-export TERMINAL='wezterm'
-export TERM='wezterm'
+export TERMINAL='kitty'
+export TERM='kitty'
 export EDITOR='nano'
 export VISUAL='vscodium'
 
