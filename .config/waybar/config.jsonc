@@ -1,0 +1,49 @@
+// -*- mode: jsonc -*-
+{
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "wireplumber",
+        "clock",
+        "tray",
+	"custom/power"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "format": "{name}"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%a, %b %d | %I:%M %p}"
+    },
+    "wireplumber": {
+        "scroll-step": 1,
+        "format": "{volume}% ",
+        "format-muted": " ",
+        "on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml",
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate",
+                        "logout": "hyprctl dispatch exit"
+		}
+    }
+}
