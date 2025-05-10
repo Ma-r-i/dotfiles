@@ -7,6 +7,10 @@ export TERM='kitty'
 export EDITOR='nano'
 export VISUAL='code'
 
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=bus
+export QT_IM_MODULE=ibus
+
 alias la='ls -a --color=auto'
 alias lah='ls -lah --color=auto'
 alias ls='ls --color=auto'
